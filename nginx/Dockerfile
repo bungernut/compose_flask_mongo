@@ -1,7 +1,6 @@
-#FROM digitalocean.com/alpine:latest
 FROM alpine:latest
 
-LABEL MAINTAINER="FirstName LastName <example@domain.com>"
+LABEL MAINTAINER="Brian Mong <bung@slac.stanfor.edu>"
 
 RUN apk --update add nginx && \
     ln -sf /dev/stdout /var/log/nginx/access.log && \
