@@ -29,6 +29,8 @@ services:
       context: mongodb
       dockerfile: Dockerfile
     container_name: mongodb
+    ports: 
+      - "27017:27017"
     restart: unless-stopped
     command: mongod --auth
     environment:
