@@ -1,6 +1,8 @@
 import os
 from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
+# https://github.com/WhyNotHugo/python-barcode
+# https://pypi.org/project/qrcode/
 
 application = Flask(__name__)
 
@@ -11,10 +13,7 @@ db = mongo.db
 
 @application.route('/')
 def index():
-    return jsonify(
-        status=True,
-        message='Welcome to the Dockerized Flask MongoDB app!'
-    )
+
 
 @application.route('/todo')
 def todo():
