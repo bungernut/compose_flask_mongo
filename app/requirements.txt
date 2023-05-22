@@ -1,5 +1,5 @@
 Flask==1.1.1
 Flask-PyMongo==2.3.0
 Flask-pymysql==0.2.3
-requests==2.20.1
+requests==2.31.0
 python-barcode==0.10.0
